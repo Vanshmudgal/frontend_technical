@@ -15,18 +15,34 @@ export const PipelineToolbar = () => {
     ];
 
     return (
-        <div style={{ padding: '10px', backgroundColor: '#1A202C' }}>
-            <h3 style={{ color: '#fff', marginBottom: '15px' }}>Nodes</h3>
-            <div style={{ 
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
-                gap: '10px'
-            }}>
+        <div style={{ padding: '10px', backgroundColor: '#1D0C4A' }}>
+            <h1
+                style={{
+                   
+                    fontSize: '30px',
+        fontWeight: '600',
+        color: '#D1A1A4',
+        marginBottom: '15px',
+        textAlign: 'center',
+        letterSpacing: '1px',
+        textTransform: 'uppercase',
+                }}
+            >
+                Nodes
+            </h1>
+
+            <div
+                style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
+                    gap: '10px'
+                }}
+            >
                 {nodeTypes.map((node) => (
-                    <DraggableNode 
+                    <DraggableNode
                         key={node.type}
-                        type={node.type} 
-                        label={node.label} 
+                        type={node.type}
+                        label={node.label}
                     />
                 ))}
             </div>

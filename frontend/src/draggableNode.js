@@ -3,15 +3,15 @@ import React from 'react';
 
 const DraggableNode = ({ type, label }) => {
     const nodeColors = {
-        customInput: '#68D391',
-        llm: '#F6AD55',
-        customOutput: '#F687B3',
-        text: '#63B3ED',
-        number: '#81E6D9',
-        conditional: '#D6BCFA',
-        timer: '#FEB2B2',
-        math: '#FEEBC8',
-        console: '#BEE3F8'
+        customInput: '#44098D',
+        llm: '#44098D',
+        customOutput: '#44098D',
+        text: '#44098D',
+        number: '#44098D',
+        conditional: '#44098D',
+        timer: '#44098D',
+        math:  '#44098D',
+        console: '#44098D'
     };
 
     const onDragStart = (event, nodeType) => {
@@ -34,7 +34,7 @@ const DraggableNode = ({ type, label }) => {
                 padding: '10px',
                 borderRadius: '8px',
                 backgroundColor: nodeColors[type] || '#1C2536',
-                color: '#1A202C',
+                color: '#FFFFFF',
                 fontWeight: 'bold',
                 textAlign: 'center',
                 boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
